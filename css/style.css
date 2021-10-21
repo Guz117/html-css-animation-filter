@@ -180,15 +180,18 @@
 }
 
 .ex-12-button:hover .ex-12-top-white {
-    animation: topmove 3s;
+    animation: topmove 3s linear;
 }
 
 @keyframes topmove {
     0% {
-        top:-10px;
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
     }
     100% {
-        left: 50%;
+        left: 10%;
     }
 }
 
@@ -198,12 +201,16 @@
 
 @keyframes bottommove {
     0% {
-        bottom:-10px;
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
     }
     100% {
-        right: 50%;
+        right: 20%;
     }
 }
+
 
 
 
